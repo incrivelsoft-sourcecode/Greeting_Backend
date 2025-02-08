@@ -47,7 +47,8 @@
 #   deploy-backend:
 #     name: Deploy Backend Services to Self-Hosted Runner
 #     needs: build-and-push-backend
-#     runs-on: self-hosted
+#     runs-on: [self-hosted, backend-runner]
+
 
 #     steps:
 #       - name: Pull Latest Backend Images
